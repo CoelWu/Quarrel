@@ -137,5 +137,17 @@ namespace DiscordAPI.Models.Messages
         /// </summary>
         [JsonProperty("guild_id")]
         public string GuildId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the message reference.
+        /// </summary>
+        [JsonProperty("message_reference")]
+        public MessageReference MessageReference { get; set; }
+
+        /// <summary>
+        /// Gets or sets the referenced message.
+        /// </summary>
+        [JsonProperty("referenced_message")]
+        public Message ReferencedMessage { get; set; }
     }
 }
